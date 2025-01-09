@@ -1,8 +1,0 @@
-.Movies-card{
- display: flex;
- flex-direction: column;
- border: 1px solid #ccc ;
- border-radius: 5x;
- box-shadow: 0px 0px 5px 1px; 
-
-}

@@ -2,14 +2,15 @@ import { Movie } from "../reducers/movies";
 import { connect } from "react-redux";
 import { RootState } from "../store";
 import { MovieCard } from "./MovieCard";
-interface MoviesProps {
+import "./Movies.css";
+interface Props {
   movies: Movie[];
 }
 
-function Movies({ movies }: MoviesProps) {
+function Movies({ movies }:  Props) {
   return (
     <section>
-      <div>
+      <div className="Movies-list">
         {movies.map((m) => (
           <MovieCard
             key={m.id}
